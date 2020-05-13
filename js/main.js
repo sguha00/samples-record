@@ -122,9 +122,9 @@ function handleSuccess(stream) {
   window.stream = stream;
 
   const gumVideo = document.querySelector('video#gum');
-  // gumVideo.setAttribute('autoplay', '');
-  // gumVideo.setAttribute('muted', '');
-  // gumVideo.setAttribute('playsinline', '');
+  gumVideo.setAttribute('autoplay', '');
+  gumVideo.setAttribute('muted', '');
+  gumVideo.setAttribute('playsinline', '');
   gumVideo.srcObject = stream;
 }
 
